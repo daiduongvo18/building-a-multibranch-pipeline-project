@@ -9,6 +9,11 @@ pipeline {
         CI = 'true'
     }
     stages {
+        stage('feature-1') {
+            steps {
+                echo 'This is feature-1 branch'    
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
